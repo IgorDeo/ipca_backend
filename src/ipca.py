@@ -43,7 +43,7 @@ class Ipca:
             final_price = price_at_month
 
         return {
-            'accumulated_tax': (final_price - initial_price)/100,
+            'accumulated_tax': (final_price - initial_price),
             'period': (self.floor_date,self.ceil_date)
         }
         
